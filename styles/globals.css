@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Glassmorphism effect for the music player */
+.audio-player {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom styles for the visualizer and file uploader */
+.visualizer {
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 15px;
+}
+
+.file-uploader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: rgba(0, 0, 128, 0.8);
+  color: white;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* Responsive and modern design adjustments */
+@media (max-width: 640px) {
+  .audio-player {
+    padding: 1.5rem;
+  }
+
+  .file-uploader {
+    font-size: 0.9rem;
+  }
+}
